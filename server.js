@@ -4,6 +4,8 @@ const mongoose = require('mongoose');
 const transactionRouter = require('./src/money/money.route');
 const app = express();
 
+require('./bot')
+
 // Set up middleware
 app.use(express.json()); // Parse JSON request bodies
 app.use(cors()); // Enable CORS for all requests
